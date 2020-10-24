@@ -7,6 +7,7 @@ class ObfuscateAsset extends Asset {
     const options = {
       debugProtection: isProd,
       debugProtectionInterval: isProd,
+      disableConsoleOutput: true,
       log: false,
       sourceMap: !isProd,
       sourceMapMode: "separate",
