@@ -1,4 +1,4 @@
-# parcel-plugin-obfuscate [![npm version](https://badge.fury.io/js/parcel-plugin-obfuscate.svg)](https://npmjs.com/package/parcel-plugin-obfuscate) [![npm dependencies](https://david-dm.org/jabuco/parcel-plugin-obfuscate.svg)](https://github.com/jabuco/parcel-plugin-obfuscate.git)
+# parcel-plugin-obfuscate [![npm dependencies](https://david-dm.org/darkwave/parcel-plugin-obfuscate.svg)](https://github.com/darkwave/parcel-plugin-obfuscate.git)
 
 This plugin allows you to obfuscate entry javascript files using [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator).
 
