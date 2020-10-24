@@ -6,7 +6,16 @@ class ObfuscatePackager extends JSPackager {
   async addAsset(asset) {
     // On production only
     if (this.options.minify) {
-      asset.generated.js = await Obfuscator.obfuscate(asset.generated.js).getObfuscatedCode();
+      const obfuscatorOptions = {
+        debugProtection: true,
+        debugProtectionInterval: true,
+        disableConsoleOutput: true,
+        log: false,
+        sourceMap: false,
+        sourceMapMode: "separate",
+        target: this.options.target
+      };
+      asset.generated.js = await Obfuscator.obfuscate(asset.generated.js, obfuscatorOptions).getObfuscatedCode();
     }
     return super.addAsset(asset);
   }
