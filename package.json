@@ -30,7 +30,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "javascript-obfuscator": "^0.27.2"
+    "javascript-obfuscator": "^2.6.1"
   },
   "devDependencies": {
     "mocha": "^6.2.0",
