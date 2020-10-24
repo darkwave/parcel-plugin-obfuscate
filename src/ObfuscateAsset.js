@@ -10,9 +10,7 @@ class ObfuscatePackager extends JSPackager {
         debugProtection: true,
         debugProtectionInterval: true,
         disableConsoleOutput: true,
-        log: false,
-        sourceMap: false,
-        sourceMapMode: "separate",
+        log: true,
         target: this.options.target
       };
       asset.generated.js = await Obfuscator.obfuscate(asset.generated.js, obfuscatorOptions).getObfuscatedCode();
