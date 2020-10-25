@@ -7,9 +7,9 @@ class ObfuscatePackager extends JSPackager {
     // On production only
     if (this.options.minify) {
       const obfuscatorOptions = {
-        debugProtection: true,
-        debugProtectionInterval: true,
-        disableConsoleOutput: true,
+        // debugProtection: true,
+        // debugProtectionInterval: true,
+        // disableConsoleOutput: true,
         log: true,
         target: this.options.target
       };
